@@ -62,6 +62,8 @@
                         </tbody>
                     </table>
                 </div> --}}
+
+
                 <form action="{{ route('scholar_submission_process_final') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="card-body">
@@ -105,7 +107,7 @@
                             </div>
                         </div>
                         <input type="hidden" value="{{ $scholar->id }}" id="id" name="id">
-                        <button id="submit" type="submit" style="display: none"></button>
+                        <button id="submit" type="submit" style="display: "></button>
                     </div>
                 </form>
             </div>
